@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body
+		{
+			margin: 5px;
+			font-family: 'Arial';
+			font-size: 30px;
+		}
+		#contenedor
+		{
+			background-color:crimson;
+			display: grid;
+			grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+		}
+		.hijo
+		{
+			background-color: #A27FF0;
+			border: 1px solid black;
+			height: 50px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div id="contenedor">
+		<div class="hijo">A</div>
+		<div class="hijo">B</div>
+		<div class="hijo">C</div>
+		<div class="hijo">D</div>
+	</div>
+</body>
+</html>

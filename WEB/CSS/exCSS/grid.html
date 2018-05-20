@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    	body 
+    	{
+    		margin: 0;
+    		font-family: 'Arial';
+    		font-size: 22px ;
+    		color:white;
+    	}
+    	.contenedor
+    	{
+    		display:grid;
+    		grid-template-columns:200px 2fr minmax(115px,1fr) ;
+    		grid-template-rows: repeat(3,calc(33.33vh - 5px));
+    		grid-column-gap: 5px;
+    		grid-row-gap: 5px;
+
+    	}
+		.contenedor div
+		{
+			padding: 9px;
+			border-radius: 5px;
+		}
+		.contenedor div:nth-child(4n+1)
+		{
+			background-color: #A60573;
+		}
+
+		.contenedor div:nth-child(4n+2)
+		{
+			background-color: #596AC3;
+		}
+		.contenedor div:nth-child(4n+3)
+		{
+			background-color: #97BC27;
+		}
+		.contenedor div:nth-child(4n+4)
+		{
+			background-color: #FF9800;
+		}
+
+
+    </style>
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="celda">1.- Uno</div>
+        <div class="celda">2.- Dos</div>
+        <div class="celda">3.- Tres</div>
+        <div class="celda">4.- Cuatro</div>
+        <div class="celda">5.- Cinco</div>
+        <div class="celda">6.- Seis</div>
+        <div class="celda">7.- Siete</div>
+        <div class="celda">8.- Ocho</div>
+        <div class="celda">9.- Nueve</div>
+    </div>
+</body>
+
+</html>

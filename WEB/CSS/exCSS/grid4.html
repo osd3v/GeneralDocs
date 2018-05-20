@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body
+		{
+			font-family: 'Arial';
+			color: white;
+
+		}
+		#contenedor
+		{
+			display: grid;
+			grid-template-columns: minmax(300px,auto) 1fr;
+			grid-template-rows: minmax(50px,auto) 1fr minmax(50px,auto);
+			grid-gap: 10px;
+			padding: 10px;
+			width: 90%;
+			min-height: 400px;
+			background-color:#c7ecee;
+		}
+		#title
+		{
+			background-color: #686de0;			
+			grid-column: 1/2;
+			grid-row: 1/2;
+		}
+		#score
+		{
+			background-color: #ff7979;
+			grid-column: 1/2;
+			grid-row: 3/4;
+		}
+		#board
+		{
+			background-color: #badc58;
+			grid-column: 2/3;
+			grid-row: 1/3;
+		}
+		#contenedor > *
+		{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 10px;
+		}
+		#stats
+		{
+			background-color: #ffbe76;
+			grid-column: 1/2;
+			grid-row: 2/3;
+		}
+		#controls
+		{
+			background-color: #30336b;
+			grid-column: 2/3;
+			grid-row: 3/4;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="contenedor">
+		<div id="title">
+		Game title	
+		</div>
+		<div id="stats">
+		Stats
+		</div>
+		<div id="board">
+			Board
+		</div>
+		<div id="score">
+			Score
+		</div>
+		<div id="controls">
+		Controls	
+		</div>
+	</div>
+</body>
+</html>

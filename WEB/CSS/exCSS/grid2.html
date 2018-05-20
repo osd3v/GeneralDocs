@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body{
+			font-family: 'Arial';
+		}
+		#main
+		{
+			display: grid;
+			grid-template-columns: repeat(3,1fr);
+			grid-template-rows: 1fr 0.5fr 1.5fr;
+			background-color: #ecf0f1;
+			grid-gap: 20px;
+			padding: 20px;
+		}
+		.ima
+		{
+			background-size: cover;
+			background-position: center;
+		}
+		#imgA
+		{
+			background-image: url(img/rojo.jpg);
+			grid-column: 1/3;
+			grid-row: 1/2;
+		}
+		#imgB
+		{
+			background-image: url(img/verde.jpg);
+			grid-column: 3/4;
+			grid-row: 1/4;
+		}
+		#logo
+		{
+			background-image: url(img/html.jpg);
+			grid-column: 2/3;
+			grid-row: 3/4;
+		}
+		#contenido
+		{
+			grid-column: 1/2;
+			grid-row: 2/4;
+		}
+		#cabecera
+		{
+			grid-column: 2/3;
+			grid-row: 2/3;
+			background-color: black;
+			color: #ecf0f1;
+			text-align: center;
+			font-size: 2vw;
+		}
+	</style>
+</head>
+<body>
+	<div id="main">
+		<div id="imgA" class="ima"></div>		
+		<div id="imgB" class="ima"></div>
+		<section id="contenido">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum totam placeat tempora quis asperiores illum, vero repellendus nemo esse vel molestias id. Quae dolorem similique deserunt quasi illum, molestiae est. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga error sint perspiciatis quaerat. Enim hic est quae ipsam quisquam, sequi aliquid nesciunt magni autem minus facilis sapiente culpa sint quaerat?</section>
+		<header id="cabecera"><p>HTML-5</p></header>
+		<div id="logo" class="ima"></div>
+	</div>
+</body>
+</html>
